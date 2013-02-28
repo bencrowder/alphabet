@@ -1,0 +1,27 @@
+*							{ -moz-box-sizing: border-box; box-sizing: border-box; -webkit-user-select: none; -moz-user-select: none; user-select: none; cursor: pointer; }
+
+body						{ margin: 0; padding: 0; background: #222; }
+
+#page						{ display: table; vertical-align: middle; }
+
+#letters					{ color: #fff; font-family: "Times New Roman", Times, serif; font-size: 25em; text-align: center; letter-spacing: 0.1em;  position: absolute; left: 50%; top: 50%; margin: 0; line-height: 1em; }
+
+#letters					{ -webkit-transition: opacity .15s ease-in-out; transition: opacity .15s ease-in-out; }
+#letters.active				{ opacity: 1.0; }
+#letters.inactive			{ opacity: 0; }
+
+@media screen and (max-width: 875px) {
+	#letters				{ font-size: 20em; }
+}
+
+@media screen and (max-width: 675px) {
+	#letters				{ font-size: 15em; }
+}
+
+@media screen and (max-width: 525px) {
+	#letters				{ font-size: 8em; }
+}
+
+@media screen and (max-width: 315px) {
+	#letters				{ font-size: 4em; }
+}
